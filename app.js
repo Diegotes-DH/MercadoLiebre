@@ -4,7 +4,9 @@ const app = express();
 
 app.use(express.static(path.resolve(__dirname,"./public")));
 
-app.listen(3000, ()=>{console.log("Server start in: http://localhost:3000/")});
+app.set("port", process.env.PORT || 3000);
+
+app.listen(app.get("port"), ()=>{console.log("Server start in: http://localhost:" + app.get("port"))});
 
 app.get("/", (req, res)=>{res.sendFile(path.join(__dirname,"views", "home.html"))});
 
