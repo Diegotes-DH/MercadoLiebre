@@ -136,9 +136,8 @@ footer{
     text-align:center;
     color: #666;
     line-height: auto;
-    padding: 10px;
-    max-width: 1200px;
-    margin:auto;
+    padding-top: 10px;
+    margin: 10px;
 }
 
 .titus{
@@ -148,24 +147,16 @@ footer{
     margin: 2%;
 }
 
-.tarjeta{
-    color:#1259c3;
-    font-size:2em;
-    line-height:10px;
-    margin: 2%; 
-}
-.regalo{
+.icon{
     color:#1259c3;
     font-size:2em;
     line-height:10px;
     margin: 2%;
+    transition: all 0.3s ease-in-out;
 }
 
-.escudo{
-    color:#1259c3;
-    font-size:2em;
-    line-height:10px;
-    margin: 2%;
+.icon:hover{
+    color:#629cf3;
 }
 
 .legal{

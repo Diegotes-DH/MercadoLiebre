@@ -33,7 +33,7 @@ header{
 }
 
 .buscador input{
-    max-width: 70%;
+    width: 70%;
     border: none;
     background-color: white;
     font-size: 15px; 
@@ -81,12 +81,15 @@ header{
     margin: auto;
 }
 
+figure{
+    margin:auto;
+}
 .banner {
         width: 100%;
         margin:auto
 }
 
-/************************************** Section *******************************/
+/************************************** Main *******************************/
 
 section{
     max-width: 90%;
@@ -98,6 +101,7 @@ section{
     padding: 5vw;
     margin-bottom: 10px;
     position: relative;
+    transition: all .3s ease-in-out;
 }
 
 .foto{
@@ -145,8 +149,8 @@ section{
 
 .descripcion{
     font-size:1rem;
-    visibility:hidden;
-    transition: all 0.5s;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
     
 }
 
@@ -154,10 +158,22 @@ section{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     
 }
-.producto:hover > .descripcion{
+
+.producto:hover .descripcion{
     visibility:visible;
+    
 }
 
+@keyframes delivery {
+    0%{opacity:0%}
+    20%{opacity: 100%; transform: translateX(-80px) }
+    100%{}
+}
+
+.producto:hover .camion{
+    animation: delivery .8s 1;
+    
+}
 
 h3{
     font-size: 24px;
@@ -180,23 +196,16 @@ footer{
     margin: 2%;
 }
 
-.tarjeta{
-    color:#1259c3;
-    font-size:2em;
-    line-height:10px;
-    margin: 2%; 
-}
-.regalo{
+.icon{
     color:#1259c3;
     font-size:2em;
     line-height:10px;
     margin: 2%;
+    transition: all 0.3s ease-in-out;
 }
-.escudo{
-    color:#1259c3;
-    font-size:2em;
-    line-height:10px;
-    margin: 2%;
+
+.icon:hover{
+    color:#629cf3;
 }
 
 .legal{
