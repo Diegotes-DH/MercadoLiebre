@@ -129,6 +129,11 @@ fieldset{
     font-family: 'Roboto';
 }
 
+.enviar:hover{
+    border: 1px solid #4c82d3;
+    background-color:#4c82d3;
+}
+
 
 /************************************** Footer *******************************/
 
